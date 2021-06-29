@@ -7,8 +7,8 @@ set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC -g")
 
 find_package(GTest)
 
-link_directories(${PROJECT_BINARY_DIR}/jamspell)
-include_directories(${CMAKE_SOURCE_DIR})
+link_directories(${CMAKE_CURRENT_BINARY_DIR}/jamspell)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 # find Boost if necessary
 if(USE_BOOST_CONVERT)
