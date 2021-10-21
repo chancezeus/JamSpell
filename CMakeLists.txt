@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8.12)
-project(jamspell)
+cmake_minimum_required(VERSION 3.0)
+project(jamspell VERSION 0.0.13)
 
 option(USE_BOOST_CONVERT "use Boost.Locale instead of std::codecvt for string conversion" OFF)
 
