@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.12)
 project(jamspell)
 
 option(USE_BOOST_CONVERT "use Boost.Locale instead of std::codecvt for string conversion" OFF)
 
 set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC -g")
 
-find_package(GTest)
+find_package(GTest QUIET)
 
 link_directories(${CMAKE_CURRENT_BINARY_DIR}/jamspell)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
